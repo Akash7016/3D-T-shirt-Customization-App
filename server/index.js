@@ -16,4 +16,10 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Hello from DALL.E" });
 });
 
-app.listen(8080, () => console.log("Server has started on port 8080"));
+// For Vercel serverless functions
+export default app;
+
+// For local development
+if (process.env.NODE_ENV !== "production") {
+  app.listen(8080, () => console.log("Server has started on port 8080"));
+}

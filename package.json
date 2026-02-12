@@ -1,0 +1,14 @@
+{
+  "name": "project-threejs-ai",
+  "version": "1.0.0",
+  "scripts": {
+    "vercel-build": "cd client && npm install && npm run build",
+    "start": "cd server && npm start",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm start"
+  },
+  "dependencies": {
+    "openai": "^6.21.0",
+    "dotenv": "^16.0.3"
+  }
+}
